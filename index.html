@@ -1,321 +1,324 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Bootstrap 5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!-- icon bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <meta name="description"
+    content="Portfolio As Fine Basith, mahasiswa informatika yang mengembangkan aplikasi web, backend, mobile, dan NLP dengan pendekatan yang rapi dan terarah.">
+  <meta name="theme-color" content="#111827">
+  <title>As Fine Basith | Portfolio</title>
 
-  <!-- Css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
-
-  <link rel="free-icon" href="http://www.flaticon.com/free-icon/sushi_187463#term=sushi&page=1&position=68">
-
-  <title>Portfolio || Basith</title>
-  <link rel="image icon" href="img/navBrand.jpg">
+  <link rel="icon" type="image/jpeg" href="img/navBrand.jpg">
 </head>
-<div>
 
-  <nav class="navbar fixed-top bg-transparent">
-    <div class="container-fluid">
-      <a class="navbar-brand"> <img src="img/navBrand.jpg" alt="Logo" width="30" height="24"
-          class="d-inline-block align-text-top rounded-full shadow-lg">
-        <span class="font-bold">As Fine</span>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar">
+      <a class="brand" href="#home" aria-label="Beranda As Fine Basith">
+        <img src="img/navBrand.jpg" alt="Logo As Fine Basith">
+        <span>As Fine Basith</span>
       </a>
+
+      <button class="hamburger" type="button" aria-label="Buka menu navigasi" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">Focus</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Frontend Development • Mobile App • Backend • NLP</p>
+        <h1>Saya mengembangkan produk digital yang nyaman digunakan, jelas fungsinya, dan rapi dalam eksekusinya.</h1>
+        <p class="hero-text">
+          Saya As Fine Basith, mahasiswa informatika yang fokus pada pengembangan aplikasi web, aplikasi Android,
+          REST API, dan pemrosesan teks berbasis NLP. Saya tertarik pada produk yang tidak hanya menarik secara visual,
+          tetapi juga memiliki alur yang jelas dan implementasi yang matang.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Lihat Karya Pilihan</a>
+          <a class="button button-secondary" href="https://github.com/Basith-08" target="_blank"
+            rel="noreferrer">Buka GitHub</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Ringkasan profil">
+          <article>
+            <strong>31+</strong>
+            <span>Public repositories</span>
+          </article>
+          <article>
+            <strong>4</strong>
+            <span>Area fokus utama</span>
+          </article>
+          <article>
+            <strong>2026</strong>
+            <span>Project aktif terbaru</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-card">
+          <div class="portrait-ring"></div>
+          <img src="img/profil.png" alt="Foto profil As Fine Basith" class="portrait">
+        </div>
+
+        <div class="floating-note note-top">
+          <span>Teknologi yang sering saya gunakan</span>
+          <strong>Vue 3, Kotlin, Go, Python</strong>
+        </div>
+
+        <div class="floating-note note-bottom">
+          <span>Proyek terbaru</span>
+          <strong>KawalMBG Prototype</strong>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section-shell about-grid" id="about">
       <div>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#project">Project</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+        <p class="eyebrow">Tentang Saya</p>
+        <h2>Saya menikmati proses mengubah ide menjadi produk yang utuh, terstruktur, dan layak digunakan.</h2>
       </div>
-    </div>
-  </nav>
 
-  <!-- Parallax -->
-  <div class="parallax home d-flex align-items-center justify-content-center w-full" id="home">
-    <!-- Gutters -->
-    <div class="container text-center">
-      <div class="row flex col justify-around">
-        <div class="me md-5  flex justify-center">
-          <img src="img/profil.png" class="img shadow-2xl rounded-circle img-fluid w-25 " alt="...">
-        </div>
-        <div class=" typewriter mt-5 fs-3 font-monospace ">
-          <!-- typewrite -->
-          <h3>Hai, I am Basith. </h3>
-          <!-- typewrite -->
-        </div>
-
-      </div>
-    </div>
-    <!-- Gutters -->
-  </div>
-  <!-- Parallax -->
-
-  <!-- About -->
-  <div class="about w-full bg-gradient-to-t from-red-100" id="about">
-    <div class="container mx-auto">
-      <div class="row flex justify-center content-center py-32 px-5">
-        <h1 class="font-bold text-xl text-center mb-3">About</h1>
-        <article class="prose lg:prose-xl rounded-xl shadow-xl py-5 px-3 bg-[#C5E0F1] ">
-          <p class="leading-relaxed text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ex quia iusto neque.
-            Ratione velit iure alias a debitis, quasi suscipit sapiente accusamus eveniet impedit obcaecati delectus
-            voluptatibus iusto vero.
-            Dolorum asperiores adipisci modi praesentium, numquam deleniti architecto aliquam repellendus? Of
-            Dolorum asperiores adipisci modi praesentium, numquam deleniti architecto aliquam repellendus? Of
+      <div class="about-cards">
+        <article class="info-card">
+          <h3>Pendekatan saya</h3>
+          <p>
+            Saya senang mengerjakan produk digital yang punya tujuan jelas. Bagi saya, antarmuka yang baik harus mudah
+            dipahami, alurnya logis, dan mampu memberi kesan solid sejak pertama kali digunakan.
           </p>
-          <p class="leading-relaxed text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ex quia iusto neque.
-            Ratione velit iure alias a debitis, quasi suscipit sapiente accusamus eveniet impedit obcaecati delectus
-            voluptatibus iusto vero.
-            Dolorum asperiores adipisci modi praesentium, numquam deleniti architecto aliquam repellendus? Officiis at
-            Dolorum asperiores adipisci modi praesentium, numquam deleniti architecto aliquam repellendus? Officiis at
+        </article>
 
+        <article class="info-card">
+          <h3>Cara saya bekerja</h3>
+          <p>
+            Saya terbiasa mengerjakan tampilan, merapikan pengalaman pengguna, lalu menghubungkannya dengan logika
+            aplikasi dan pengolahan data. Saya percaya kualitas sering terlihat justru dari detail-detail kecil.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Yang sedang saya perdalam</h3>
+          <p>
+            Saat ini saya banyak mendalami Vue 3, TypeScript, design system, Android Kotlin, backend Go, dan NLP
+            untuk Bahasa Indonesia. Saya ingin tumbuh sebagai developer yang kuat dari sisi produk maupun teknis.
           </p>
         </article>
       </div>
-    </div>
-  </div>
-  <!-- About -->
+    </section>
 
-  <!-- Project -->
-  <div id="project" class="project w-full py-24 px-5 bg-gradient-to-b from-red-100">
-    <h1 class="font-bold text-xl text-center mb-3">Project</h1>
-    <div class="container mx-auto flex snap-x overflow-auto gap-10 w-9//12">
-
-      <div class="flex shrink gap-7">
-
-        <div class="card snap-normal snap-start" style="width: 18rem;">
-          <img src="img/contoh.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Contoh Project</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="card-body">
-            <!-- Link Web -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-globe"></i></a>
-
-            <!-- Git Hub -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-github"></i></a>
-
-          </div>
+    <section class="section-shell" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Proyek Unggulan</p>
+          <h2>Beberapa proyek yang paling mewakili cara saya merancang solusi dan mengeksekusikannya.</h2>
         </div>
-
-        <div class="card snap-normal snap-start" style="width: 18rem;">
-          <img src="img/contoh.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Contoh Project</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="card-body">
-            <!-- Link Web -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-globe"></i></a>
-
-            <!-- Git Hub -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-github"></i></a>
-
-          </div>
-        </div>
-
-        <div class="card snap-normal snap-start" style="width: 18rem;">
-          <img src="img/contoh.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Contoh Project</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="card-body">
-            <!-- Link Web -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-globe"></i></a>
-
-            <!-- Git Hub -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
-        <div class="card snap-normal snap-start" style="width: 18rem;">
-          <img src="img/contoh.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Contoh Project</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="card-body">
-            <!-- Link Web -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-globe"></i></a>
-
-            <!-- Git Hub -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
-        <div class="card snap-normal snap-start" style="width: 18rem;">
-          <img src="img/contoh.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Contoh Project</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="card-body">
-            <!-- Link Web -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-globe"></i></a>
-
-            <!-- Git Hub -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
-        <div class="card snap-normal snap-start" style="width: 18rem;">
-          <img src="img/contoh.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Contoh Project</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <div class="card-body">
-            <!-- Link Web -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-globe"></i></a>
-
-            <!-- Git Hub -->
-            <a href="#" class="btn-floating ms-2" role="button"><i class="bi bi-github"></i></a>
-          </div>
-        </div>
-
+        <a class="inline-link" href="https://github.com/Basith-08?tab=repositories" target="_blank"
+          rel="noreferrer">Jelajahi semua repo <i class="bi bi-arrow-up-right"></i></a>
       </div>
 
-
-
-    </div>
-
-  </div>
-  <!-- Project -->
-
-  <!-- Contact -->
-  <div class="contact d-flex justify-center align-items-center bg-[#C5E0F1] " id="contact">
-    <div class="subContact w-7/12 py-20">
-      <form class="bg-transparent shadow-md rounded p-7 ">
-        <h1 class="font-bold text-center">Contact me</h1>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
-            Name
-          </label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="name" type="text" placeholder="Your name">
-        </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-            Email
-          </label>
-          <input
-            class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-            id="email" type="email" placeholder="Your email">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="subjek">
-            Subjek
-          </label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="subjek" type="text" placeholder="Subjek">
-        </div>
-        <div class="mb-4">
-          <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your
-            message</label>
-          <textarea id="message" rows="4"
-            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Your message..."></textarea>
-        </div>
-        <div class="grid justify-items-end">
-          <button
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button">
-            submit
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- Contact -->
-
-  <!-- Comment -->
-
-  <!-- Comment -->
-
-  <!-- bg-[#bdd7ef] -->
-  <!-- Footer -->
-  <footer class=" w-full bg-red-100">
-    <!-- Grid container -->
-    <div class="container font-mono">
-
-      <!-- Section: Copyright -->
-      <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-          <!-- Grid column -->
-          <div class="col-md-7 col-lg-8 text-center text-md-start">
-            <!-- Copyright -->
-            <div class="p-3">
-              &copy; 2022 Copyright:
-              <a class="font-family">As Fine Basith</a>
-            </div>
-            <!-- Copyright -->
+      <div class="projects-grid">
+        <article class="project-card accent-sky">
+          <div class="project-top">
+            <span class="project-badge">Vue 3 • TypeScript</span>
+            <h3>KawalMBG Prototype</h3>
           </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 ml-lg-0 text-center">
-
-            <!-- Twitter -->
-            <a href="https://twitter.com/asfine_" class="btn-floating me-2" role="button"><i
-                class="bi bi-twitter"></i></a>
-
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/asfbasith/" class="btn-floating ms-2" role="button"><i
-                class="bi bi-instagram"></i></a>
-            <!-- Git Hub -->
-            <a href="https://github.com/Basith-08" class="btn-floating ms-2" role="button"><i
-                class="bi bi-github"></i></a>
+          <p>
+            Prototype aplikasi pemantauan program MBG dengan peran regulator dan vendor, dilengkapi dashboard publik,
+            analitik, sistem peringatan, dan alur penggunaan yang dirancang seperti produk nyata.
+          </p>
+          <ul class="tag-list">
+            <li>Vite</li>
+            <li>PrimeVue</li>
+            <li>Pinia</li>
+            <li>Tailwind CSS</li>
+            <li>Vitest</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Basith-08/garda-KawalMBG-prototype" target="_blank" rel="noreferrer">Repo</a>
           </div>
-          <!-- Grid column -->
+        </article>
+
+        <article class="project-card accent-rose">
+          <div class="project-top">
+            <span class="project-badge">Design System</span>
+            <h3>Rose UI</h3>
+          </div>
+          <p>
+            Design system berbasis Vue 3 yang saya bangun untuk menjaga konsistensi antarmuka dari level fondasi.
+            Repositori ini mencakup komponen, token desain, playground, dokumentasi, dan alur distribusi package.
+          </p>
+          <ul class="tag-list">
+            <li>Vue 3</li>
+            <li>pnpm Workspace</li>
+            <li>Tailwind-first</li>
+            <li>Tokens</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Basith-08/rose-ui" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card accent-gold">
+          <div class="project-top">
+            <span class="project-badge">Business Dashboard</span>
+            <h3>Laptop Sales Management System</h3>
+          </div>
+          <p>
+            Frontend dashboard penjualan laptop yang dirancang untuk menggambarkan alur bisnis secara realistis, mulai
+            dari autentikasi pengguna, transaksi, ringkasan finansial, hingga kalkulasi pajak otomatis.
+          </p>
+          <ul class="tag-list">
+            <li>Vue 3</li>
+            <li>TypeScript</li>
+            <li>Supabase</li>
+            <li>Ant Design Vue</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Basith-08/laptop-sales-management-system" target="_blank"
+              rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card accent-mint">
+          <div class="project-top">
+            <span class="project-badge">Android Native</span>
+            <h3>Tailor Management System Mobile</h3>
+          </div>
+          <p>
+            Aplikasi Android native untuk mendukung operasional usaha jahit rumahan, dengan fokus pada pengelolaan
+            pelanggan, pesanan, invoice, dan alur kerja harian.
+          </p>
+          <ul class="tag-list">
+            <li>Kotlin</li>
+            <li>MVVM</li>
+            <li>Room Database</li>
+            <li>Coroutines</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Basith-08/Tailor-Management-System-Mobile" target="_blank"
+              rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card accent-slate">
+          <div class="project-top">
+            <span class="project-badge">Backend API</span>
+            <h3>Go Todo API</h3>
+          </div>
+          <p>
+            REST API berbasis Go yang menunjukkan fondasi backend yang rapi, dengan struktur respons konsisten,
+            dukungan pagination, integrasi Postgres, dan setup yang mudah diuji.
+          </p>
+          <ul class="tag-list">
+            <li>Go</li>
+            <li>Postgres</li>
+            <li>Docker Compose</li>
+            <li>REST</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Basith-08/go-todo-api" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card accent-lilac">
+          <div class="project-top">
+            <span class="project-badge">NLP Tool</span>
+            <h3>Analisis Text NLP</h3>
+          </div>
+          <p>
+            Aplikasi web untuk preprocessing teks Bahasa Indonesia. Proyek ini menunjukkan ketertarikan saya pada
+            pengolahan data teks yang praktis untuk kebutuhan riset maupun eksperimen berbasis dataset.
+          </p>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Vue 3</li>
+            <li>NLTK</li>
+            <li>Sastrawi</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Basith-08/Analisis-Text-NLP" target="_blank" rel="noreferrer">Repo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell process-grid" id="process">
+      <div>
+        <p class="eyebrow">Nilai Yang Saya Bawa</p>
+        <h2>Saya tidak hanya mengejar selesai, tetapi juga kualitas hasil akhirnya.</h2>
+      </div>
+
+      <div class="process-list">
+        <article class="process-card">
+          <span>01</span>
+          <h3>Tampilan yang terarah</h3>
+          <p>Saya percaya tampilan yang baik membantu sebuah produk terlihat lebih kredibel dan mudah dipahami.</p>
+        </article>
+        <article class="process-card">
+          <span>02</span>
+          <h3>Alur yang jelas</h3>
+          <p>Saya menyusun halaman dan fitur agar pengguna cepat memahami fungsi produk tanpa banyak penjelasan.</p>
+        </article>
+        <article class="process-card">
+          <span>03</span>
+          <h3>Eksekusi yang adaptif</h3>
+          <p>Saya nyaman bekerja di frontend, mobile, backend, maupun NLP selama masalah yang dikerjakan memang jelas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell contact-shell" id="contact">
+      <div class="contact-card">
+        <p class="eyebrow">Mari Terhubung</p>
+        <h2>Jika karya saya relevan dengan yang Anda cari, saya akan senang untuk berdiskusi lebih lanjut.</h2>
+        <p>
+          Saya terbuka untuk diskusi seputar proyek, kolaborasi, masukan, maupun peluang belajar yang menantang.
+          Tempat terbaik untuk melihat proses dan hasil kerja saya tetap ada di GitHub.
+        </p>
+
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://github.com/Basith-08" target="_blank"
+            rel="noreferrer">Lihat GitHub Saya</a>
+          <a class="button button-secondary" href="https://www.instagram.com/asfbasith/" target="_blank"
+            rel="noreferrer">Instagram</a>
         </div>
-      </section>
-      <!-- Section: Copyright -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 As Fine Basith. Kumpulan karya, proses, dan eksperimen yang terus saya kembangkan.</p>
+    <div class="social-links">
+      <a href="https://github.com/Basith-08" target="_blank" rel="noreferrer" aria-label="GitHub"><i
+          class="bi bi-github"></i></a>
+      <a href="https://www.instagram.com/asfbasith/" target="_blank" rel="noreferrer" aria-label="Instagram"><i
+          class="bi bi-instagram"></i></a>
     </div>
-    <!-- Grid container -->
   </footer>
 
-  <!-- JavaScript -->
   <script src="js/hamburger.js"></script>
-
-  <!-- script bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-  </script>
-
-  </body>
+</body>
 
 </html>
