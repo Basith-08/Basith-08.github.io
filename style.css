@@ -618,6 +618,30 @@ h3 {
     font-size: 14px;
   }
 
+  /* --- Performance Patch for Old Phones --- */
+  body {
+    background-attachment: scroll !important;
+  }
+
+  .navbar,
+  .info-card,
+  .project-card,
+  .process-card,
+  .contact-card,
+  .portrait-card,
+  .floating-note {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: var(--surface-strong) !important;
+    box-shadow: none !important;
+  }
+
+  .project-card::after,
+  .site-header::after {
+    display: none !important; /* Hide heavy blur pseudo-elements */
+  }
+  /* ---------------------------------------- */
+
   .navbar {
     padding-top: 1rem;
   }
